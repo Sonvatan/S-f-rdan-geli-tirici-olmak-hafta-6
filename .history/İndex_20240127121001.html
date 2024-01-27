@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Week-6</title>
+    </head>
+    <body>
+        <script>
+            const dataCount = 78;
+            const dataCountForPerPage = 10;
+
+            let pageCount = Math.floor(dataCount / dataCountForPerPage);
+
+            if(dataCount % dataCountForPerPage) {
+                pageCount += 1;
+            }
+            for(let i = 1; i <= pageCount; i++) {
+                    console.log(i);
+
+            }
+      
+        </script>
+    </body>
+</html>

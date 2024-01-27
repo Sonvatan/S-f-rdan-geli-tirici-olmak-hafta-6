@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Week-6</title>
+    </head>
+    <body>
+        <div id="buttons"></div>
+        <script>
+            const containerDİV = document.getElementById("buttons");
+            const dataCount = 78;
+            const dataCountForPerPage = 10;
+
+            let pageCount = Math.floor(dataCount / dataCountForPerPage);
+
+            if(dataCount % dataCountForPerPage) {
+                pageCount += 1;
+            }
+            for(let i = 1; i <= pageCount; i++) {
+                    containerDİV.innetHTML +="<button>" + i +"</button";
+
+            }
+      
+        </script>
+    </body>
+</html>

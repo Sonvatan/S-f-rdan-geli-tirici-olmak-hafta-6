@@ -11,12 +11,12 @@
 
             let pageCount = Math.ceil(dataCount / dataCountForPerPage);
 
-            
+            if(dataCount % dataCountForPerPage) {
+                pageCount += 1;
+            }
             for(let i = 1; i <= pageCount; i++) {
-                    containerDiv.innerHTML +="<button onclick= 'goTOPage(" + i + ")'>" + i +"</button";
-            } 
-            function goTOPage(pageIndex) {
-                alert(pageIndex);
+                    containerDiv.innerHTML +="<button>" + i +"</button";
+
             }
       
         </script>
