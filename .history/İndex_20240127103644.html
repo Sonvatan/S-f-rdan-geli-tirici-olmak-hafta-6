@@ -4,11 +4,14 @@
     </head>
     <body>
         <script>
+            var x = 3;
             function test() {
                 x = "macar";
             }
-            test();
-            console.log ("after:",x);
+                console.log ("before:",x);
+                test();
+                console.log ("after:",x);
+          
         </script>
     </body>
 </html>
