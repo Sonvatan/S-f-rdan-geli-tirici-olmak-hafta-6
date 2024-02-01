@@ -8,41 +8,20 @@
             }
             
             html, body, #root {
-                background-color: rgb(230, 230, 230);
+                background-color: beige;
                 height: 100%;
                 width: 100%;
             }
             .person {
-                 background-color: rgb(255, 255, 255);
+                background-color: chocolate;
                 flex-direction: column;
                 border-radius: 10px;
-                user-select: none;
                 display: flex;
                 padding: 10px;
                 margin: 10px;
             }
-            .person > .title {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin-bottom: 4px;
-                font-size: 14px;
-            }
-
-            .person > .job {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 10px;
-
-            }
-
-            .person:hover {
-                cursor: pointer;
-                opacity: 0.5;
-            }
-
-            .person:active {
-                transform: translateY(2px);
-            }
         </style>
-    </head>
+    
     <body>
         <div id = "root"></div>
         
@@ -133,13 +112,14 @@
             const containerDiv = document.getElementById("root");
             data.forEach((item,index) => {
                 containerDiv.innerHTML += `<div id="${item.id}" class="person person-${index}">
-                    <span class="title">${item.title}</span>
-                    <span class= "job">${item.job}</span>
+                    <span>${item.title}</span>
+                    <span>${item.job}</span>
 
                 </div>`;
                
             });
             
        </script>
+    </head>
     </body>
 </html>

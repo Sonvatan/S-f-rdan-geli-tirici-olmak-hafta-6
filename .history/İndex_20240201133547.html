@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Week-6</title>
+    </head>
+    <body>
+       <script>
+            const names = [
+                "Ahmet",
+                "Mehmet",
+                "Murat",
+                "Ayşe",
+                "Keziban",
+                "Songül",
+                "Emine",
+                "Musab",
+                "Abdurrahman",
+
+            ];
+            const surnames = [
+                "Balkuri",
+                "Kara",
+                "Güneş",
+                "Özbek",
+                "Yılmaz",
+                "Macar",
+
+            ];
+            const jobs = [
+                "Tamirci",
+                "Tornacı",
+                "Çaycı",
+                "Polis",
+                "Ögretmen",
+                "Camcı",
+                "Güvenlikçi",
+                "Pastacı",
+                "Geliştirici,"
+
+            ];
+
+            console.log(names.length);
+            for(let i = 0; i < 1000; i++) {
+                console.log(Math.random() * names.length);
+            }
+
+            const randomName = () => {
+                return names[Math.random() *names.length];
+
+            };
+
+            const randomSurname = () => {
+
+            };
+
+            const randomFullName = () => {
+                const name = randomName();
+                const surname = randomSurname();
+
+                return ` ${name} ${surname}`;
+
+            };
+            const randomJob = () => {
+                return jobs[Math.floor(Math.random() * jobs.length)];
+            };
+
+             let data = [];
+            for(let i = 0; i < 78; i++) {
+                data .push({ 
+                    title:randomFullName(),  
+                    job: randomjobs(),
+                    id: i
+                });
+
+            }
+                console.log();
+       </script>
+    </body>
+</html>
